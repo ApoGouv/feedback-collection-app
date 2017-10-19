@@ -13,8 +13,8 @@
     "server": "nodemon index.js",
     "client": "( cd ./client && yarn start)",
     "dev": "concurrently \"yarn server\" \"yarn client\"",
-    "npm-client-deploy": "npm install --prefix client && npm run build -- prefix client",
-    "heroku-postbuild": "YARN_PRODUCTION=false yarn run npm-client-deploy"
+    "npm-client-deploy": "npm install --prefix client && npm run build --prefix client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false yarn run npm-client-deploy"
   },
   "devDependencies": {
     "prettier": "1.7.4"
