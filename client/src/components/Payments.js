@@ -9,7 +9,6 @@ import StripeCheckout from 'react-stripe-checkout';
 import {connect} from 'react-redux';
 import * as actions from '../actions';
 
-
 /**
  * StripeCheckout Properties/Options
  * name: Like title that appears in the payment form popup
